@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #fff;
-  --secondary-color: #000;
-  --text-color: #ff00ff;
+  --primary-color: #202023;
+  --secondary-color: #50FA7B;
+  --btn-color: #2D2F37;
 }
 
 * {
@@ -9,4 +9,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+#calc {
+  
+  background-color: var(--primary-color);
+  color: #fff;
 }
