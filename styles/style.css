@@ -1,18 +1,22 @@
 :root {
-  --primary-color: #202023;
-  --secondary-color: #50FA7B;
-  --btn-color: #2D2F37;
+  --prymary-bg-color: #202023;
+  --secondary-bg-color: #161E30;
+  --prymary-text-color: #ffffff;
+  --secondary-text-color: #cccccc;
+  --btn-bg-color: #2d2f37a8;
+  --btn-hover-color: #4c4f583a;
+  --equal-btn-bg-color: #ff7e27d7;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Outfit', sans-serif;
 }
 
 body {
-  background-color: #fff;
+  background-image: linear-gradient(150deg, #feeed6 0%, #baa8ed 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +24,74 @@ body {
 }
 
 #calc {
+  max-width: 450px;
+  padding: 1.2em;
+  padding-top: 1.7em;
+  background: linear-gradient(150deg, 
+    var(--secondary-bg-color) 20%,
+    var(--prymary-bg-color) 60%, 
+    var(--prymary-bg-color) 100%);
+  color: var(--prymary-text-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+#operations {
+  text-align: right;
+}
+
+#previous-operation,
+#current-operation {
+  overflow-wrap: break-word;
+  min-height: 2em;
   
-  background-color: var(--primary-color);
-  color: #fff;
+}
+
+#previous-operation {
+  padding: 1.2em 0.2em;
+  font-weight: 300;
+  color: var(--secondary-text-color);
+}
+
+#current-operation {
+  font-size: 3.5em;
+  font-weight: 400;
+}
+
+#btn-container {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#btn-container button {
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-color: var(--btn-bg-color);
+  color: var(--secondary-text-color);
+  height: 3em;
+  width: 3em;
+  font-size: 1.5em;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#btn-container .number {
+  background-color: transparent;
+  color: var(--prymary-text-color);
+}
+
+#btn-container .number:hover {
+  background-color: var(--btn-hover-color);
+}
+
+#btn-container #equal-btn {
+  width: auto;
+  color: var(--text-color);
+  grid-column: span 2;
+  background-color: var(--equal-btn-bg-color);
 }
