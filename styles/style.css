@@ -24,7 +24,7 @@ body {
 }
 
 #calc {
-  max-width: 450px;
+  max-width: 380px;
   padding: 1.2em;
   padding-top: 1.7em;
   background: linear-gradient(150deg, 
@@ -41,6 +41,7 @@ body {
 
 #operations {
   text-align: right;
+  padding-top: 1em;
 }
 
 #previous-operation,
@@ -51,7 +52,7 @@ body {
 }
 
 #previous-operation {
-  padding: 1.2em 0.2em;
+  padding: 0 0.2em;
   font-weight: 300;
   color: var(--secondary-text-color);
 }
