@@ -37,8 +37,6 @@ class Calculator {
     const previus = +this.previousOperationText.innerText.split(" ")[0];
     const current = +this.currentOperationText.innerText;
 
-    const previousOperation = this.previousOperationText.innerText.split(" ")[1];
-
     switch (operation) {
       case "+":
         operationValue = previus + current;
