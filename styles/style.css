@@ -21,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3em;
+  min-height: 100svh;
 }
 
 #calc {
